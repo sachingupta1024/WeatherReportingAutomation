@@ -55,4 +55,12 @@ public class ReadConfig {
 	public static String getTempVariance() {
 		return pro.getProperty("tempVariance");
 	}
+	
+	public static String getWindVariance() {
+		return pro.getProperty("windVariance");
+	}
+	
+	public static String getHumidityVariance() {
+		return pro.getProperty("humidityVariance");
+	}
 }

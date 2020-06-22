@@ -35,7 +35,7 @@ WebDriver localdriver;
 	@CacheLookup
 	public WebElement humidityField;
 	
-	@FindBy(how=How.XPATH,using="(//div[@class='leaflet-popup-content']//span[@class='heading'])[4]")
+	@FindBy(how=How.XPATH,using="(//div[@class='leaflet-popup-content']//span[@class='heading'])[5]")
 	@CacheLookup
 	public WebElement temperatureField;
 	
