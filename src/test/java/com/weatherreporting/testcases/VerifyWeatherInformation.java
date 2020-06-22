@@ -22,37 +22,26 @@ import io.restassured.path.json.JsonPath;
 public class VerifyWeatherInformation extends BaseClass{
 
 	@Test(description = "Verify the Difference between various weather info")
-	public static void verifyTemperatureDifference() {
+	public static void verifyWeatherInfoDifference() {
 		
 		List<Weather> weatherObject = new ArrayList<Weather>();
-		
+		//Getting data from API and UI
 		List<Float> apiData = getDataFromAPI();
-		
 		List<Float> uiData = getDataFromUI();
-		
+		//Setting the API and UI object values in Weather class
 		Weather apiValues = new Weather(apiData.get(0),apiData.get(1),apiData.get(2));
-		
 		Weather uiValues = new Weather(uiData.get(0),uiData.get(1),uiData.get(2));
 		
 		weatherObject.add(apiValues);
 		weatherObject.add(uiValues);
 		
-		for(int i=0; i< apiData.size(); i++) {
-			System.out.println("====="+apiData.get(i));
-		}
-		
-		for(int i=0; i< uiData.size(); i++) {
-			System.out.println("====="+uiData.get(i));
-		}
-		
 		Compare compare = new Compare();
-		
+		//Getting Boolean flags for the all the entities of weather class after compare them with variance
 		Boolean tempCompareFlag = compare.compareTemperature(apiValues.getTemperature(), uiValues.getTemperature(), ReadConfig.getTempVariance());
-		
 		Boolean humidityCompareFlag = compare.compareHumidity(apiValues.getHumidity(), uiValues.getHumidity(), ReadConfig.getHumidityVariance());
-		
 		Boolean windCompareFlag = compare.compareWind(apiValues.getWind(), uiValues.getWind(), ReadConfig.getWindVariance());
 		
+		//Asserting based on the above flags
 		Assert.assertTrue(windCompareFlag && humidityCompareFlag && tempCompareFlag);
 		
 	}
@@ -90,7 +79,6 @@ public class VerifyWeatherInformation extends BaseClass{
 		WeatherInfoPageObjects weatherInfoPageObjects = new WeatherInfoPageObjects(driver);
 		weatherInfoPageObjects.searchCity(ReadConfig.getCityName());
 		weatherInfoPageObjects.selectEnteredCity();
-	
 		weatherInfoPageObjects.getVisibleCitiesOnMapAndCLickOnSelectedCity();
 
 		// Getting Data from the City Pop-up available on Map	
