@@ -1,4 +1,4 @@
-package com.weatherreporting.weatherclass;
+package com.testvagrant.dao.builder;
 
 public class Weather {
 	

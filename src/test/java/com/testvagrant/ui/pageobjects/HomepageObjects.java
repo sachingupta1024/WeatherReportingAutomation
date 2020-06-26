@@ -1,4 +1,4 @@
-package com.weatherreporting.pageobjectclasses;
+package com.testvagrant.ui.pageobjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -40,5 +40,4 @@ public class HomepageObjects {
 		weatherMenuOption.click();
 		
 	}
-
 }

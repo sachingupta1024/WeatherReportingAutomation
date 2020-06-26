@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.weatherreporting.testcases.VerifyWeatherInformation">
+      <class name="com.testvagrant.testcases.VerifyWeatherInformation">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyTemperatureDifference"/>
+          <include name="tearDown"/>
+          <include name="verifyWeatherInfoDifference"/>
         </methods>
-      </class> <!-- com.weatherreporting.testcases.VerifyWeatherInformation -->
+      </class> <!-- com.testvagrant.testcases.VerifyWeatherInformation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

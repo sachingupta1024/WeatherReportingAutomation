@@ -1,4 +1,4 @@
-package com.weatherreporting.utils;
+package com.testvagrant.utilities;
 
 import java.io.File;
 import java.io.FileInputStream;

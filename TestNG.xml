@@ -2,9 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name = "TestVagrant">
-	<test name = "verify weather reporting from 2 sources">
+	<test name = "verify weather report difference from 2 sources">
 		<classes>
-			<class name = "com.weatherreporting.testcases.VerifyWeatherInformation" />
+			<class name = "com.testvagrant.testcases.VerifyWeatherInformation" />
 		</classes>
 	</test>
 </suite>

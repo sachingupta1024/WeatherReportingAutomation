@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-22T12:44:59 IST" name="TestVagrant" finished-at="2020-06-22T12:45:49 IST" duration-ms="50072">
+  <suite started-at="2020-06-26T22:22:10 IST" name="TestVagrant" finished-at="2020-06-26T22:22:44 IST" duration-ms="33511">
     <groups>
     </groups>
-    <test started-at="2020-06-22T12:44:59 IST" name="verify weather reporting from 2 sources" finished-at="2020-06-22T12:45:49 IST" duration-ms="50072">
-      <class name="com.weatherreporting.testcases.VerifyWeatherInformation">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.weatherreporting.testcases.VerifyWeatherInformation@5f683daf]" started-at="2020-06-22T12:44:59 IST" name="setUp" finished-at="2020-06-22T12:45:09 IST" duration-ms="9865" status="PASS">
+    <test started-at="2020-06-26T22:22:10 IST" name="verify weather report difference from 2 sources" finished-at="2020-06-26T22:22:44 IST" duration-ms="33511">
+      <class name="com.testvagrant.testcases.VerifyWeatherInformation">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testvagrant.testcases.VerifyWeatherInformation@4f67eb2a]" started-at="2020-06-26T22:22:05 IST" name="setUp" finished-at="2020-06-26T22:22:10 IST" duration-ms="4723" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyTemperatureDifference()[pri:0, instance:com.weatherreporting.testcases.VerifyWeatherInformation@5f683daf]" started-at="2020-06-22T12:45:09 IST" name="verifyTemperatureDifference" description="Verify the Difference between various weather info" finished-at="2020-06-22T12:45:48 IST" duration-ms="38985" status="PASS">
+        <test-method signature="verifyWeatherInfoDifference()[pri:0, instance:com.testvagrant.testcases.VerifyWeatherInformation@4f67eb2a]" started-at="2020-06-26T22:22:10 IST" name="verifyWeatherInfoDifference" description="Verify the Difference between various weather info" finished-at="2020-06-26T22:22:44 IST" duration-ms="33432" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTemperatureDifference -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.weatherreporting.testcases.VerifyWeatherInformation@5f683daf]" started-at="2020-06-22T12:45:48 IST" name="tearDown" finished-at="2020-06-22T12:45:49 IST" duration-ms="1091" status="PASS">
+        </test-method> <!-- verifyWeatherInfoDifference -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testvagrant.testcases.VerifyWeatherInformation@4f67eb2a]" started-at="2020-06-26T22:22:44 IST" name="tearDown" finished-at="2020-06-26T22:22:44 IST" duration-ms="353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.weatherreporting.testcases.VerifyWeatherInformation -->
-    </test> <!-- verify weather reporting from 2 sources -->
+      </class> <!-- com.testvagrant.testcases.VerifyWeatherInformation -->
+    </test> <!-- verify weather report difference from 2 sources -->
   </suite> <!-- TestVagrant -->
 </testng-results>

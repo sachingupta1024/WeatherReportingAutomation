@@ -1,4 +1,4 @@
-package com.weatherreporting.pageobjectclasses;
+package com.testvagrant.ui.pageobjects;
 
 import java.util.List;
 

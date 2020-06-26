@@ -1,17 +1,19 @@
-package com.weatherreporting.baseclass;
+package com.testvagrant.baseclass;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 
-import com.weatherreporting.utils.ReadConfig;
+import com.testvagrant.utilities.ReadConfig;
+import com.testvagrant.utilities.UtilClass;
 
 public class BaseClass {
 	
 	public static WebDriver driver;
+	UtilClass utilClass;
 	
-	@BeforeTest
+	@BeforeSuite
 	public static void setUp() {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.home")+"/Downloads/chromedriver");
 		driver = new ChromeDriver();
@@ -19,7 +21,7 @@ public class BaseClass {
 		new ReadConfig();
 	}
 	
-	@AfterTest
+	@AfterSuite
 	public void tearDown() {
 		driver.quit();
 	}

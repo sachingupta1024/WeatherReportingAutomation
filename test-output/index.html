@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-TestVagrant">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestVagrant" title="com.weatherreporting.testcases.VerifyWeatherInformation" class="method navigator-link" hash-for-method="verifyTemperatureDifference">verifyTemperatureDifference</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestVagrant" title="com.testvagrant.testcases.VerifyWeatherInformation" class="method navigator-link" hash-for-method="verifyWeatherInfoDifference">verifyWeatherInfoDifference</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestVagrant -->
@@ -120,14 +120,14 @@
           <div class="suite-TestVagrant-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.weatherreporting.testcases.VerifyWeatherInformation</span>
+              <span class="class-name">com.testvagrant.testcases.VerifyWeatherInformation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyTemperatureDifference">
-                  </a> <!-- verifyTemperatureDifference -->
-                  <span class="method-name">verifyTemperatureDifference</span>
+                  <a name="verifyWeatherInfoDifference">
+                  </a> <!-- verifyWeatherInfoDifference -->
+                  <span class="method-name">verifyWeatherInfoDifference</span>
                   <em>
 (Verify the Difference between various weather info)                  </em>
                 </div> <!-- method-content -->
@@ -144,11 +144,11 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;TestVagrant&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;verify weather reporting from 2 sources&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;verify weather report difference from 2 sources&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.weatherreporting.testcases.VerifyWeatherInformation&quot;/&gt;
+      &lt;class name=&quot;com.testvagrant.testcases.VerifyWeatherInformation&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- verify weather reporting from 2 sources --&gt;
+  &lt;/test&gt; &lt;!-- verify weather report difference from 2 sources --&gt;
 &lt;/suite&gt; &lt;!-- TestVagrant --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -160,7 +160,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">verify weather reporting from 2 sources (1 class)</span>
+                <span class="test-name">verify weather report difference from 2 sources (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -188,14 +188,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyTemperatureDifference')
-data.setCell(0, 2, 'com.weatherreporting.testcases.VerifyWeatherInformation')
-data.setCell(0, 3, 38985);
+data.setCell(0, 1, 'verifyWeatherInfoDifference')
+data.setCell(0, 2, 'com.testvagrant.testcases.VerifyWeatherInformation')
+data.setCell(0, 3, 33432);
 window.suiteTableData['TestVagrant']= { tableData: data, tableDiv: 'times-div-TestVagrant'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <span class="suite-total-time">Total running time: 33 seconds</span>
               <div id="times-div-TestVagrant">
               </div> <!-- times-div-TestVagrant -->
             </div> <!-- times-div -->
@@ -221,19 +221,19 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.weatherreporting.testcases.VerifyWeatherInformation</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="chronological-class-name">com.testvagrant.testcases.VerifyWeatherInformation</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">verifyTemperatureDifference</span>
-                <span class="method-start">9936 ms</span>
+                <span class="method-name">verifyWeatherInfoDifference</span>
+                <span class="method-start">4787 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
+              <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">48950 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-start">38295 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
